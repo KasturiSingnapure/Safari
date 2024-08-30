@@ -39,7 +39,7 @@ Developed a comprehensive capstone project, a full-stack web application using J
 - Cloudinary for Image Management: Efficient media handling.
 - MongoDB Atlas for Data Storage: Reliable and scalable solutions.
 ##  Screenshots
-
+![screen1](https://github.com/user-attachments/assets/944b0c17-e7f8-447e-91c6-d83e07f7c0b1)
 
 
 
