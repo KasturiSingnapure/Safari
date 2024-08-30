@@ -28,8 +28,8 @@ Project Link: https://safari-4fiq.onrender.com/listings
 ## Features of Safari
 
 - User Authentication: Login, Logout, and User Profile Section
-- CRUD Operations: Add, Edit, and Delete Listings- User Authentication: Login, Logout, and User Profile Section
 - CRUD Operations: Add, Edit, and Delete Listings
+- User Authentication: Login, Logout, and User Profile Section
 - Review System: Add and Delete Reviews
 - Account Management: Update User Account and Password
 - User Data Security: Password Hashing and Encryption
