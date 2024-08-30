@@ -7,6 +7,7 @@ Project Link: https://safari-4fiq.onrender.com/listings
 
 ## Technologies Used
 
+- JavaScript
 - MongoDB
 - Express.js
 - Node.js
