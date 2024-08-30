@@ -22,8 +22,6 @@ Project Link: https://safari-4fiq.onrender.com/listings
 - Mongoose for MongoDB Object Modeling
 - Multer for File Uploads
 - Passport Local for Local Authentication
-- Passport Facebook for Facebook Authentication
-- Passport Google OAuth20 for Google Authentication
 - Passport Local Mongoose for Mongoose-Specific Authentication
 
 
