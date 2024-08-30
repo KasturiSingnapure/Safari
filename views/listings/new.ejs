@@ -1,0 +1,116 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="row mt-3">
+  <div class="col-8 offset-2">
+    <h3>Create a New Listing</h3>
+    <form
+      method="POST"
+      action="/listings"
+      novalidate
+      class="needs-validation"
+      enctype="multipart/form-data"
+    >
+      <!-- Title Input -->
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input
+          name="listing[title]"
+          placeholder="Enter title"
+          type="text"
+          class="form-control"
+          required
+        />
+        <div class="valid-feedback">Title looks good!</div>
+      </div>
+
+      <!-- Description Input -->
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea
+          name="listing[description]"
+          class="form-control"
+          placeholder="Enter a short description"
+          required
+        ></textarea>
+        <div class="invalid-feedback">Please enter a short description.</div>
+      </div>
+
+      <!-- Image Upload -->
+      <div class="mb-3">
+        <label for="image" class="form-label">Upload Image</label>
+        <input
+          name="listing[image]"
+          type="file"
+          class="form-control"
+          required
+        />
+      </div>
+
+      <div class="row">
+        <!-- Price Input -->
+        <div class="mb-3 col-md-4">
+          <label for="price" class="form-label">Price</label>
+          <input
+            name="listing[price]"
+            placeholder="Enter price"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">Please enter a valid price.</div>
+        </div>
+
+        <!-- Category Dropdown -->
+        <div class="mb-3 col-md-8">
+          <label for="category" class="form-label">Category</label>
+          <select name="listing[category]" class="form-select" required>
+            <option value="" disabled selected>Select a category</option>
+            <option value="1">Trending</option>
+            <option value="2">Rooms</option>
+            <option value="3">Cities</option>
+            <option value="4">Mountains</option>
+            <option value="5">Castles</option>
+            <option value="6">Beach</option>
+            <option value="7">Camping</option>
+            <option value="8">Farms</option>
+            <option value="9">Amazing Pools</option>
+            <option value="10">Arctic</option>
+          </select>
+          <div class="invalid-feedback">Please select a category.</div>
+        </div>
+      </div>
+
+      <!-- Country and Location in Single Row -->
+      <div class="row">
+        <!-- Country Input -->
+        <div class="mb-3 col-md-6">
+          <label for="country" class="form-label">Country</label>
+          <input
+            name="listing[country]"
+            placeholder="Enter country"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">Please enter a valid country name.</div>
+        </div>
+
+        <!-- Location Input -->
+        <div class="mb-3 col-md-6">
+          <label for="location" class="form-label">Location</label>
+          <input
+            name="listing[location]"
+            placeholder="Enter location"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div class="invalid-feedback">Please enter a valid location.</div>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-dark mt-3">Add</button>
+    </form>
+  </div>
+</div>
